@@ -17,6 +17,7 @@
 	window.addEventListener('message', receiveMessage, false);
 	function receiveMessage(event)
 	{
+		console.log("event",event);
 	    if (event.data) {
 	        var msg;
 	        try {
