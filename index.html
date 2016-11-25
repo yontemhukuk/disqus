@@ -34,6 +34,13 @@
 	              height: msg.data.height
 	            }, '*');
 	        }
+			else if(msg.name === 'resize'){
+				window.parent.postMessage({
+				  sentinel: 'amp',
+				  type: 'embed-size',
+				  height: msg.data.height
+				}, '*');
+			}
 	    }
 	}
 	</script>
