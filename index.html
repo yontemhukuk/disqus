@@ -28,7 +28,7 @@
 	        if (!msg)
 	            return false;
 
-	        if (msg.name === 'resize') {
+	        if (msg.name === 'rendered') {
 	            window.parent.postMessage({
 	              sentinel: 'amp',
 	              type: 'embed-size',
